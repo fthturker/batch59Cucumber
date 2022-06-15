@@ -44,7 +44,7 @@ Faker faker=new Faker();
     public void kullaniciPickUpSatirinaKayitliYerSecer() {
         Actions actions = new Actions(Driver.getDriver());
         actions.click(homePage.pickUp).
-                sendKeys("New York").perform();
+                sendKeys(faker.internet().domainWord()).perform();
     }
 
     @Given("Kullanıcı anasayfada bulunan Drop Off satirinin gorunur oldugunu test eder")
@@ -107,7 +107,7 @@ Faker faker=new Faker();
 
     @Given("Kullanıcı anasayfada bulunan DropOffTime satirinin gorunur oldugunu test eder")
     public void kullanıcıAnasayfadaBulunanDropOffTimeSatirininGorunurOldugunuTestEder() {
-        Assert.assertTrue(homePage.dropOffTime.isDisplayed());
+        Assert.assertTrue(homePage.pickUpTime.isDisplayed());
     }
 
     @Given("kullanici DropOffTime satirina  saat secer")
