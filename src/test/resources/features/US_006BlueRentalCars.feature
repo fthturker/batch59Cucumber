@@ -12,6 +12,15 @@ Feature: US006 kullanici profil sayfasini kontrol edebilir
     Given kullanici Drop Off satirina kayitli yer secer
     Given Kullanıcı anasayfada bulunan pickUpDate satirinin gorunur oldugunu test eder
     Given kullanici pickUpDate satirina tarih girer
+    Given Kullanıcı anasayfada bulunan PickUpTime satirinin gorunur oldugunu test eder
+    Given kullanici PickUpTime satirina kayitli saat secer
+    Given Kullanıcı anasayfada bulunan DropOffDate satirinin gorunur oldugunu test eder
+    Given kullanici DropOffTime satirina tarih secer
+    Given Kullanıcı anasayfada bulunan DropOffTime satirinin gorunur oldugunu test eder
+    Given kullanici DropOffTime satirina  saat secer
+    Given Kullanıcı anasayfada bulunan Continue Reservation satirinin gorunur oldugunu test eder
+    Given kullanici Continue Reservation butonuna tiklar
+    Given pleaseFirstLogin gorunur oldugunu test eder
 
 
 

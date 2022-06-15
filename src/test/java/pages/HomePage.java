@@ -13,21 +13,12 @@ public class HomePage {
 
     @FindBy(xpath = "//select[@name='car']")
     public WebElement select;
-
     @FindBy(xpath = "//input[@name='pickUpLocation']")
-    public WebElement pickUpDropDown;
-
+    public WebElement pickUp;
     @FindBy(xpath = "//input[@name='dropOfLocation']")
     public WebElement DropOff;
-
     @FindBy(xpath = "//input[@name='pickUpDate']")
     public WebElement pickUpDate;
-
-
-
-
-
-
     @FindBy(xpath = "//input[@name='pickUpTime']")
     public WebElement pickUpTime;
     @FindBy(xpath = "//input[@name='dropOffDate']")
