@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.371">
-    <testcase classname="US006 kullanici profil sayfasini kontrol edebilir" name="TC01 kullanici dropdown menusunu kullanabilir" time="7.198">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="6.855">
+    <testcase classname="US006 kullanici profil sayfasini kontrol edebilir" name="TC01 kullanici dropdown menusunu kullanabilir" time="6.687">
         <system-out>
             <![CDATA[Given kullanici "brcUrl" sitesine gider.....................................passed
 Given Kullanıcı anasayfada bulunan Select a car menusunun gorunur oldugunu test eder.passed
