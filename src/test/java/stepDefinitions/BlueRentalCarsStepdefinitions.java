@@ -1,6 +1,6 @@
 package stepDefinitions;
 
-import com.github.javafaker.Faker;
+
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
 import org.openqa.selenium.interactions.Actions;
@@ -10,7 +10,7 @@ import utilities.Driver;
 
 public class BlueRentalCarsStepdefinitions {
     HomePage homePage = new HomePage();
-Faker faker=new Faker();
+
 
     @Given("kullanici {string} sitesine gider")
     public void kullanici_sitesine_gider(String string) {
@@ -44,7 +44,7 @@ Faker faker=new Faker();
     public void kullaniciPickUpSatirinaKayitliYerSecer() {
         Actions actions = new Actions(Driver.getDriver());
         actions.click(homePage.pickUp).
-                sendKeys(faker.internet().domainWord()).perform();
+                sendKeys("New York").perform();
     }
 
     @Given("Kullanıcı anasayfada bulunan Drop Off satirinin gorunur oldugunu test eder")
