@@ -10,7 +10,7 @@ public class HomePage {
         PageFactory.initElements(Driver.getDriver(),this);
     }
 
-
+    // US006 Oguzhan-Fatih
     @FindBy(xpath = "//select[@name='car']")
     public WebElement select;
     @FindBy(xpath = "//input[@name='pickUpLocation']")

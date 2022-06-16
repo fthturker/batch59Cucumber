@@ -9,9 +9,40 @@ public class ExercisePage {
     public ExercisePage(){
         PageFactory.initElements(Driver.getDriver(),this);
     }
-    @FindBy(xpath = "img[alt='Website for automation practice']")
-    public WebElement page;
 
-    @FindBy(xpath = "//a[normalize-space()='Signup / Login']")
+    @FindBy (xpath = "//a[normalize-space()='Home']")
+    public WebElement homepage;
+    @FindBy(xpath = "//a[text()=' Signup / Login']")
     public WebElement login;
+    @FindBy(xpath = "//h2[normalize-space()='New User Signup!']")
+    public WebElement SignupView;
+    @FindBy(xpath = "//input[@placeholder='Name']")
+    public WebElement name;
+    @FindBy(xpath = "//input[@data-qa='signup-email']")
+    public WebElement email;
+    @FindBy(xpath = "//button[normalize-space()='Signup']")
+    public WebElement kaydol;
+    @FindBy(xpath = "//b[normalize-space()='Enter Account Information']")
+    public WebElement InformationView;
+    @FindBy(xpath = "(//input[@id='id_gender2'])[1]")
+    public WebElement gender;
+    @FindBy(xpath = "//input[@id='password']")
+    public WebElement password;
+    @FindBy(xpath = "(//input[@id='newsletter'])[1]")
+    public WebElement newsletter;
+    @FindBy(xpath = "(//input[@id='optin'])[1]")
+    public WebElement partners;
+
+
+    @FindBy(xpath = "//input[@id='first_name']")
+    public WebElement firstName;
+
+    @FindBy(xpath ="//input[@id='last_name']" )
+    public WebElement lastName;
+
+    @FindBy(xpath = "//input[@id='company']")
+    public WebElement company;
+
+    @FindBy(xpath ="//input[@id='address1']" )
+    public WebElement adres1;
 }
