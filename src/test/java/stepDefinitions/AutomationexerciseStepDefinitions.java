@@ -2,6 +2,7 @@ package stepDefinitions;
 
 
 import com.github.javafaker.Faker;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import org.junit.Assert;
@@ -38,8 +39,9 @@ public class AutomationexerciseStepDefinitions {
     @Then("Enter name and email address")
     public void enterNameAndEmailAddress() {
         Actions actions=new Actions(Driver.getDriver());
-        actions.click(exercisePage.name).sendKeys("fatih").perform();
-        actions.click(exercisePage.email).sendKeys("fthturker80@gmail.com").perform();
+
+        actions.click(exercisePage.name).sendKeys("alirmm").perform();
+        actions.click(exercisePage.email).sendKeys("fthturker080@gmail.com").perform();
 
 
     }
@@ -93,7 +95,52 @@ public class AutomationexerciseStepDefinitions {
                 .sendKeys("ABA")
                 .sendKeys(Keys.TAB)
                 .sendKeys("ksksdfuıuıfd")
+                .sendKeys(Keys.TAB)
+                .sendKeys("izmir")
+                .sendKeys(Keys.TAB)
+                .sendKeys("Canada").click()
+                .sendKeys(Keys.TAB)
+                .sendKeys(Keys.TAB)
+                .sendKeys("Marmara")
+                .sendKeys(Keys.TAB)
+                .sendKeys("Istanbul")
+                .sendKeys(Keys.TAB)
+                .sendKeys("350986")
+                .sendKeys(Keys.TAB)
+                .sendKeys("05423830774")
                 .perform();
+    }
+
+    @And("Click Create Account button")
+    public void clickCreateAccountButton() {
+        exercisePage.createButton.click();
+
+    }
+
+    @Then("Verify that ACCOUNT CREATED! is visible")
+    public void verifyThatACCOUNTCREATEDIsVisible() {
+        Assert.assertTrue(exercisePage.account.isDisplayed());
+    }
+
+    @Then("Click Continue button")
+    public void clickContinueButton() {
+        exercisePage.devam.click();
+    }
+
+    @And("Verify that Logged in as username is visible")
+    public void verifyThatLoggedInAsUsernameIsVisible() {
+        Assert.assertTrue(exercisePage.logged.isDisplayed());
+    }
+
+    @Then("Click Delete Account button")
+    public void clickDeleteAccountButton() {
+        exercisePage.delete.click();
+    }
+
+    @Then("Verify that ACCOUNT DELETED! is visible and click Continue button")
+    public void verifyThatACCOUNTDELETEDIsVisibleAndClickContinueButton() {
+        Assert.assertTrue(exercisePage.deleteview.isDisplayed());
+        exercisePage.devam2.click();
     }
 }
 

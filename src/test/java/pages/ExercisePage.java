@@ -33,16 +33,36 @@ public class ExercisePage {
     @FindBy(xpath = "(//input[@id='optin'])[1]")
     public WebElement partners;
 
-
     @FindBy(xpath = "//input[@id='first_name']")
     public WebElement firstName;
-
     @FindBy(xpath ="//input[@id='last_name']" )
     public WebElement lastName;
-
     @FindBy(xpath = "//input[@id='company']")
     public WebElement company;
-
     @FindBy(xpath ="//input[@id='address1']" )
     public WebElement adres1;
+    @FindBy(xpath ="(//input[@id='address2'])[1]" )
+    public WebElement adres2;
+
+    @FindBy(xpath = "//button[normalize-space()='Create Account']")
+    public WebElement createButton;
+
+    @FindBy(xpath = "//h2[@class='title text-center']")
+    public WebElement account;
+
+    @FindBy (xpath = "//a[normalize-space()='Continue']")
+    public WebElement devam;
+
+    @FindBy (xpath = "//header[@id='header']//li[1]")
+    public WebElement logged;
+
+    @FindBy (xpath = "a[href='/delete_account']")
+    public WebElement delete;
+
+    @FindBy (xpath = "a[href='/delete_account']")
+    public WebElement deleteview;
+
+    @FindBy (xpath = "//button[normalize-space()='OPTIONS']")
+    public WebElement devam2;
+
 }
