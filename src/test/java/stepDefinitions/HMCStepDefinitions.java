@@ -25,6 +25,7 @@ public class HMCStepDefinitions {
     public void login_butonuna_basar() {
         hmcPage.loginButonu2.click();
     }
+
     @Then("sayfaya giris yaptigini kontrol eder")
     public void sayfaya_giris_yaptigini_kontrol_eder() {
         Assert.assertTrue(hmcPage.hotelManagement.isDisplayed());
